@@ -1,9 +1,9 @@
 function bubbleSort(array) {
     // change code below this line
-    isSorted = false;
-    lastUnsorted = array.length - 1;
+    var isSorted = false;
+    var lastUnsorted = array.length - 1;
     while(!isSorted){
-      for(i = 0; i < lastUnsorted; i++){
+      for(var i = 0; i < lastUnsorted; i++){
         if(array[i] > array[i + 1]){
           swap(array, i, i +1);
           isSorted = false;
@@ -17,7 +17,7 @@ function bubbleSort(array) {
   
   const swap = (array, a, b) => {
     //swap index a and index b in the array
-    temp = array[a];
+    var temp = array[a];
     array[a] = array[b];
     array[b] = temp;
     return array;
