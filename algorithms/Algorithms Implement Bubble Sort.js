@@ -13,7 +13,7 @@ function bubbleSort(array) {
     }
     // change code above this line
     return array;
-  }
+}
   
   const swap = (array, a, b) => {
     //swap index a and index b in the array
